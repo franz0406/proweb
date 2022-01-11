@@ -1,0 +1,108 @@
+/* RESET CSS */
+@import url(./reset.css);
+/* 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&display=swap');
+
+
+/* LAYOUT */
+.container {
+    width:1130px; 
+    margin:0 auto; 
+}
+
+/* TYPOGRAPHY */
+body { 
+    font:normal 18px/27px 'Open Sans', sans-serif;
+    color:#2e2e2e; 
+}
+
+.main_tit {
+    font:normal 55px/1 'Roboto', sans-serif;
+    letter-spacing: 0.025em;
+    color:#fff; 
+}
+
+.content_tit {
+    font:normal 32px/1 'Roboto', sans-serif;
+    letter-spacing: 0.025em;
+}
+
+.content_sub_tit {
+    font:normal 23px/1 'Roboto', sans-serif;
+}
+
+a {
+    font-style: italic;
+    color:#f6604c;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    position: fixed;
+    left: 0; right: 0;
+    padding:27px 0;
+
+    background: rgba(0,0,0,0.8);
+    z-index: 999;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo > a {
+    display: block;
+    width:54px; height:54px;
+
+    text-indent: -9999em;
+    background: url(../images/logo.png) no-repeat;
+}
+
+header nav {
+    float:right;
+}
+
+header nav > ul > li {
+    float: left;
+    margin-left: 27px;
+}
+
+header nav > ul > li > a {
+    font:normal bold 14px/54px 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color:#fff;
+}
+
+
+/* ---------- BANNER ---------- */
+.banner_list > .slide {
+    width:100%;
+    height:600px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;    
+}
+
+.banner_list > .slide1 {
+    background-image: url(../images/slide-1-bg.jpg);
+}
+
+.banner_list > .slide2 {
+    background-image: url(../images/slide-2-bg.jpg);
+}
+
+.banner_list > .slide3 {
+    background-image: url(../images/slide-3-bg.jpg);
+}
+
+/* ---------- FOOTER ---------- */
+
+
+/* ---------- ABOUT ---------- */
+
+
+/* ---------- PORTFOLIO ---------- */
