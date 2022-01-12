@@ -22,7 +22,9 @@ body {
 .main_tit {
     font:normal 55px/1 'Roboto', sans-serif;
     letter-spacing: 0.025em;
-    color:#fff; 
+    color:#fff;
+    text-transform: uppercase; 
+    font-weight: 300;
 }
 
 .content_tit {
@@ -37,6 +39,31 @@ body {
 a {
     font-style: italic;
     color:#f6604c;
+}
+
+/* COMMON CSS */
+.shadow_box {
+    display: inline-block;
+    padding:0 42px;
+    line-height: 108px;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.3);
+}
+
+.shadow_box.red {
+    background: rgba(246, 96, 76, 0.9);
+}
+
+.btn {
+    display: inline-block;
+    padding:0 32px;
+    line-height: 54px;
+    color:#f0ad64;
+    letter-spacing:0.1em;
+    font-style:normal;
+    font-weight:bold;
+    text-transform: uppercase;
+    border:1px solid #f0ad64;
+    border-radius: 2px;
 }
 
 /* ---------- HEADER ---------- */
@@ -75,16 +102,28 @@ header nav > ul > li > a {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color:#fff;
+    transition: .3s linear;
+}
+
+header nav > ul > li > a:hover {
+    color:#f6604c;
 }
 
 
 /* ---------- BANNER ---------- */
+.banner {
+    position: relative;
+}
+
 .banner_list > .slide {
     width:100%;
     height:600px;
+    padding-top:163px;
+    text-align: center;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;    
+    background-size: cover;
+    box-sizing: border-box;    
 }
 
 .banner_list > .slide1 {
@@ -97,6 +136,59 @@ header nav > ul > li > a {
 
 .banner_list > .slide3 {
     background-image: url(../images/slide-3-bg.jpg);
+}
+
+.banner_list > .slide > .slide_contents {
+    padding:87px 0 53px;
+    margin: -27px auto 0;
+    width:700px;
+    background: rgba(0,0,0,0.8);
+    color:#fff;
+}
+
+.banner_list > .slide > .slide_contents > p {
+    margin-bottom:41px;
+}
+
+.controls > a {
+    position: absolute;
+    left: 50%;  top: 50%;
+    transform:translateY(-50%);
+    font-size:55px;
+    color:rgba(255,255,255, 0.5);
+    z-index: 888;
+}
+
+.controls > a.prev {
+    margin-left: -570px;
+}
+
+.controls > a.next {
+    margin-left: 536px;
+}
+
+.pager {
+    position: absolute;
+    left: 0; right: 0; bottom: 27px;
+    text-align: center;
+    z-index: 777;
+}
+
+.pager > span {
+    display: inline-block;
+    margin: 0 15px;
+    width:15px;
+    height:15px;
+    background: rgba(255,255,255, 0.8);
+    border:3px solid transparent;
+    border-radius: 50%;
+    text-indent: -9999em;
+    cursor: pointer;
+}
+
+.pager > span.cycle-pager-active {
+    background: none;
+    border:3px solid #fff;
 }
 
 /* ---------- FOOTER ---------- */
