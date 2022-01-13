@@ -54,3 +54,6 @@ table {
 a {
     text-decoration: none;
 }
+img {
+	vertical-align: top;
+}
